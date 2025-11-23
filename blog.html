@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sebastian Prasanna</title>
+    <title>Blog - Sebastian Prasanna</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -68,67 +68,73 @@
 
       main {
         flex: 1;
-        max-width: 1200px;
+        max-width: 900px;
         margin: 0 auto;
         padding: 4rem 2rem;
         width: 100%;
       }
 
-      .hero {
-        text-align: center;
-        padding: 4rem 0;
-      }
-
       h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 600;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
         letter-spacing: 2px;
       }
 
-      .subtitle {
-        font-size: 1.5rem;
-        opacity: 0.8;
+      .intro {
+        font-size: 1.3rem;
         margin-bottom: 3rem;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
+        opacity: 0.9;
       }
 
-      .page-links {
+      .blog-posts {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         gap: 2rem;
-        flex-wrap: wrap;
-        margin-top: 3rem;
       }
 
-      .card {
+      .blog-post {
         background-color: #242424;
         border: 1px solid #333;
         padding: 2rem;
         border-radius: 8px;
         text-decoration: none;
         color: #ffffff;
-        width: 280px;
         transition: all 0.3s ease;
       }
 
-      .card:hover {
+      .blog-post:hover {
         background-color: #2d2d2d;
         border-color: #555;
         transform: translateY(-5px);
       }
 
-      .card h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
+      .blog-post h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
         font-weight: 600;
       }
 
-      .card p {
-        font-size: 1.1rem;
+      .blog-date {
+        font-size: 1rem;
+        opacity: 0.6;
+        margin-bottom: 1rem;
+      }
+
+      .blog-excerpt {
+        font-size: 1.2rem;
         opacity: 0.8;
+        line-height: 1.8;
+      }
+
+      .no-posts {
+        text-align: center;
+        padding: 4rem 0;
+        opacity: 0.6;
+      }
+
+      .no-posts p {
+        font-size: 1.3rem;
       }
 
       footer {
@@ -149,16 +155,12 @@
           font-size: 2.5rem;
         }
 
-        .subtitle {
-          font-size: 1.2rem;
+        .blog-post h2 {
+          font-size: 1.7rem;
         }
 
         .nav-links {
           gap: 1rem;
-        }
-
-        .card {
-          width: 100%;
         }
       }
     </style>
@@ -177,26 +179,28 @@
     </header>
 
     <main>
-      <section class="hero">
-        <h1>Hey, I'm Sebastian!</h1>
-        <p class="subtitle">I'm trying to make the world a better place! I'm an MIT student, AI Safety researcher, and community builder.</p>
-      </section>
+      <h1>Blog</h1>
+      
+      <p class="intro">
+        Welcome to my blog. Here I share my thoughts, ideas, and experiences on various topics that interest me.
+      </p>
 
-      <div class="page-links">
-        <a href="about.html" class="card">
-          <h2>About</h2>
-          <p>A more long winded description of who I am.</p>
-        </a>
+      <div class="blog-posts">
+        <article class="blog-post">
+          <h2>Welcome to My Blog</h2>
+          <p class="blog-date">November 23, 2025</p>
+          <p class="blog-excerpt">
+            This is my first blog post. I'm excited to share my thoughts and experiences with you. Stay tuned for more content as I continue to build and grow this space.
+          </p>
+        </article>
 
-        <a href="contact.html" class="card">
-          <h2>Contact</h2>
-          <p>Get in touch with me.</p>
-        </a>
-
-        <a href="blog.html" class="card">
-          <h2>Blog</h2>
-          <p>Read my thoughts.</p>
-        </a>
+        <article class="blog-post">
+          <h2>Coming Soon</h2>
+          <p class="blog-date">To be published</p>
+          <p class="blog-excerpt">
+            More posts are on the way. I'll be writing about topics that inspire me and sharing insights from my journey. Check back soon for new content!
+          </p>
+        </article>
       </div>
     </main>
 
@@ -205,3 +209,4 @@
     </footer>
   </body>
 </html>
+
